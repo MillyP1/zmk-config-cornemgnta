@@ -27,6 +27,7 @@
                         bindings = <&kp>, <&kp>;
                 };
 
+/*
                 ht: holdtap {
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOLDTAP";
@@ -36,6 +37,7 @@
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
+*/
 
                 td: tapdance {
                         compatible = "zmk,behavior-tap-dance";
@@ -70,7 +72,7 @@
                 &trans   &kp Q   &kp W   &kp E        &kp R          &kp T            &kp Y     &kp U         &kp I             &kp O           &td SQT SEMI    &trans
                 &trans   &kp A   &kp S   &hm LALT D   &hm LGUI F     &kp G            &kp H     &hm LGUI J    &hm LALT K        &kp L           &kp P           &trans
                 &trans   &kp Z   &kp X   &kp C        &kp V          &kp B            &kp N     &kp M         &td MINUS COMMA   &td EQUAL DOT   &td EXCL FSLH   &trans
-                                         &kp LCTRL    &ht LSHFT TAB  &kp SPACE        &kp RET   &to SYMBOLS   &ht CAPS BSPC
+                                         &kp LCTRL    &hm LSHFT TAB  &kp SPACE        &kp RET   &to SYMBOLS   &hm CAPS BSPC
                 >;
                 };
 
@@ -103,7 +105,7 @@
                 bindings = <
                 &trans   &kp ESC        &kp C_PP   &kp C_PREV   &kp C_NEXT              &kp LGUI           &kp MINUS   &kp N7        &kp N8     &kp N9   &kp SEMI   &trans
                 &trans   &kp TAB        &trans     &trans       &kp TILDE               &trans             &kp EQUAL   &kp N4        &kp N5     &kp N6   &kp LPAR   &trans
-                &trans   &to NAVIGATE   &trans     &trans       &ht LC(LS(N4)) MINUS    &trans             &kp N0      &kp N1        &kp N2     &kp N3   &kp RPAR   &trans
+                &trans   &to NAVIGATE   &trans     &trans       &hm LC(LS(N4)) MINUS    &trans             &kp N0      &kp N1        &kp N2     &kp N3   &kp RPAR   &trans
                                                    &kp LCTRL    &kp LSHFT               &to DEFAULT        &kp RET     &to SYMBOLS   &kp BSPC
                 >;
                 };
@@ -161,7 +163,7 @@
                 &trans   &kp Q   &kp W   &kp E        &kp R          &kp T            &kp Y     &kp U         &kp I             &kp O           &td SQT SEMI    &trans
                 &trans   &kp A   &kp S   &hm LALT D   &hm LGUI F     &kp G            &kp H     &hm LGUI J    &hm LALT K        &kp L           &kp P           &trans
                 &trans   &kp Z   &kp X   &kp C        &kp V          &kp B            &kp N     &kp M         &td MINUS COMMA   &td EQUAL DOT   &td EXCL FSLH   &trans
-                                         &kp LCTRL    &ht LSHFT TAB  &kp SPACE        &kp RET   &to SYMBOLS   &kp BSPC
+                                         &kp LCTRL    &hm LSHFT TAB  &kp SPACE        &kp RET   &to SYMBOLS   &kp BSPC
                 >;
                 };
         };
