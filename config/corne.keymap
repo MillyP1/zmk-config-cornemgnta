@@ -76,7 +76,7 @@
                 &trans   &kp ESC        &kp AT     &kp HASH   &kp DLLR    &kp PRCNT          &kp CARET   &kp AMPS      &kp STAR    &kp EXCL  &kp SEMI   &trans
                 &trans   &kp TAB        &trans     &trans     &kp TILDE   &kp SQT            &kp LPAR    &kp RPAR      &trans      &trans    &kp BSLH   &trans
                 &trans   &to NAVIGATE   &kp LALT   &trans     &kp MINUS   &kp EQUAL          &kp LBRC    &kp RBRC      &kp COMMA   &kp DOT   &kp FSLH   &trans
-                                                   &kp LCTRL  &kp LSHFT   &to DEFAULT        &kp RET     &to NUMBERS   &kp BSPC
+                                                   &kp LCTRL  &kp LSHFT   &to DEFAULT        &kp RET     &to NUM_MEDIA   &kp BSPC
                 >;
                 };
 
@@ -126,7 +126,7 @@
                 bindings = <
                 &trans   &trans        &trans   &bt BT_PRV   &bt BT_NXT   &trans                  &bt BT_CLR     &trans   &trans   &trans   &trans        &trans
                 &trans   &trans        &trans   &trans       &trans       &trans                  &trans         &trans   &trans   &trans   &trans        &trans
-                &trans   &to SYMBOLS   &trans   &trans       &trans       &bt BT_SEL 1            &bt BT_SEL 2   &trans   &trans   &trans   &to NUMBERS   &trans
+                &trans   &to SYMBOLS   &trans   &trans       &trans       &bt BT_SEL 1            &bt BT_SEL 2   &trans   &trans   &trans   &to NUM_MEDIA   &trans
                                                 &trans       &trans       &to DEFAULT             &trans         &trans   &trans
                 >;
                 };
