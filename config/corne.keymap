@@ -69,16 +69,16 @@
                 // Symbols Layer
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |  ESC  |   @   |   #   |   $   |   %   ||      ||   ^   |   &   |   *   |   !   |   ;   | EMPTY |
-                // | EMPTY |  TAB  |       |       |   ~   |   '   ||      ||  LPAR |  RPAR |       |       |   \   | EMPTY |
+                // | EMPTY |  TAB  |  CTRL |       |   ~   |   '   ||      ||  LPAR |  RPAR |       |       |   \   | EMPTY |
                 // | EMPTY |  NAV  |  ALT  |       |   -   |   =   ||      ||  LBRC |  RBRC |   ,   |   .   |   /   | EMPTY |
-                //                         |  CTRL |  SHFT |  DFT  ||      ||  ENT  |  NUM  |  BKSC |
+                //                         |  GUI |  SHFT |  DFT  ||      ||  ENT  |  NUM  |  BKSC |
                 // ===================================================================================================================
                 symbols_layer {
                 bindings = <
-                &trans   &kp ESC        &kp AT     &kp HASH   &kp DLLR    &kp PRCNT          &kp CARET       &kp AMPS        &kp STAR    &kp EXCL  &kp SEMI   &trans
-                &trans   &kp TAB        &trans     &trans     &kp TILDE   &kp SQT            &kp LPAR        &kp RPAR        &trans      &trans    &kp BSLH   &trans
-                &trans   &to NAVIGATE   &kp LALT   &trans     &kp MINUS   &kp EQUAL          &kp LBRC        &kp RBRC        &kp COMMA   &kp DOT   &kp FSLH   &trans
-                                                   &kp LCTRL  &kp LSHFT   &to DEFAULT        &td RET SPACE   &to NUM_MEDIA   &kp BSPC
+                &trans   &kp ESC        &kp AT      &kp HASH   &kp DLLR    &kp PRCNT          &kp CARET       &kp AMPS        &kp STAR    &kp EXCL  &kp SEMI   &trans
+                &trans   &kp TAB        &kp LCTRL   &trans     &kp TILDE   &kp SQT            &kp LPAR        &kp RPAR        &trans      &trans    &kp BSLH   &trans
+                &trans   &to NAVIGATE   &kp LALT    &trans     &kp MINUS   &kp EQUAL          &kp LBRC        &kp RBRC        &kp COMMA   &kp DOT   &kp FSLH   &trans
+                                                    &kp LGUI   &kp LSHFT   &to DEFAULT        &td RET SPACE   &to NUM_MEDIA   &kp BSPC
                 >;
                 };
 
@@ -92,10 +92,10 @@
                 // ===================================================================================================================
                 num_media_layer {
                 bindings = <
-                &trans   &kp ESC        &kp C_PP   &kp C_PREV   &kp C_NEXT             &kp LGUI           &kp MINUS       &kp N7        &kp N8     &kp N9   &kp SEMI   &trans
-                &trans   &kp TAB        &trans     &trans       &kp TILDE              &trans             &kp EQUAL       &kp N4        &kp N5     &kp N6   &kp LPAR   &trans
-                &trans   &to NAVIGATE   &trans     &trans       &hm LC(LS(N4)) MINUS   &trans             &kp N0          &kp N1        &kp N2     &kp N3   &kp RPAR   &trans
-                                                   &kp LCTRL    &kp LSHFT              &to DEFAULT        &td RET SPACE   &to SYMBOLS   &kp BSPC
+                &trans   &kp ESC        &kp C_PP    &kp C_PREV   &kp C_NEXT             &kp LGUI           &kp MINUS       &kp N7        &kp N8     &kp N9   &kp SEMI   &trans
+                &trans   &kp TAB        &kp LCTRL   &trans       &kp TILDE              &trans             &kp EQUAL       &kp N4        &kp N5     &kp N6   &kp LPAR   &trans
+                &trans   &to NAVIGATE   &kp LALT    &trans       &hm LC(LS(N4)) MINUS   &trans             &kp N0          &kp N1        &kp N2     &kp N3   &kp RPAR   &trans
+                                                    &kp LGUI     &kp LSHFT              &to DEFAULT        &td RET SPACE   &to SYMBOLS   &kp BSPC
                 >;
                 };
 
