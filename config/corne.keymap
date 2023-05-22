@@ -67,15 +67,15 @@
                 // Symbols Layer
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |  ESC  |   @   |   #   |   $   |   %   ||      ||   ^   |   &   |   *   |   !   |   ;   | EMPTY |
-                // | EMPTY |  TAB  |       |       |   ~   |   '   ||      ||   (   |   )   |       |       |   \   | EMPTY |
-                // | EMPTY |  NAV  |  ALT  |       |   -   |   =   ||      ||   {   |   }   |   ,   |   .   |   /   | EMPTY |
+                // | EMPTY |  TAB  |       |       |   ~   |   '   ||      ||  LPAR |  RPAR |       |       |   \   | EMPTY |
+                // | EMPTY |  NAV  |  ALT  |       |   -   |   =   ||      ||  LBRC |  RBRC |   ,   |   .   |   /   | EMPTY |
                 //                         |  CTRL |  SHFT |  DFT  ||      ||  ENT  |  NUM  |  BKSC |
                 // ===================================================================================================================
                 symbols_layer {
                 bindings = <
                 &trans   &kp ESC        &kp AT     &kp HASH   &kp DLLR    &kp PRCNT          &kp CARET   &kp AMPS      &kp STAR    &kp EXCL  &kp SEMI   &trans
                 &trans   &kp TAB        &trans     &trans     &kp TILDE   &kp SQT            &kp LPAR    &kp RPAR      &trans      &trans    &kp BSLH   &trans
-                &trans   &to NAVIGATE   &kp LALT   &trans     &kp MINUS   &kp EQUAL          &kp LBCR    &kp RBCR      &kp COMMA   &kp DOT   &kp FSLH   &trans
+                &trans   &to NAVIGATE   &kp LALT   &trans     &kp MINUS   &kp EQUAL          &kp LBRC    &kp RBRC      &kp COMMA   &kp DOT   &kp FSLH   &trans
                                                    &kp LCTRL  &kp LSHFT   &to DEFAULT        &kp RET     &to NUMBERS   &kp BSPC
                 >;
                 };
@@ -84,8 +84,8 @@
                 // Numbers and Media Controls Layer
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |  ESC  |  PLY  |  RWD  |  FWD  |  GUI  ||      ||   -   |   7   |   8   |   9   |   +   | EMPTY |
-                // | EMPTY |  TAB  |       |  VUP  |  VDN  |       ||      ||   =   |   4   |   5   |   6   |   (   | EMPTY |
-                // | EMPTY |  NAV  |       |  SUP  |  SDN  |   SS  ||      ||   0   |   1   |   2   |   3   |   )   | EMPTY |
+                // | EMPTY |  TAB  |       |  VUP  |  VDN  |       ||      ||   =   |   4   |   5   |   6   |  LPAR | EMPTY |
+                // | EMPTY |  NAV  |       |  SUP  |  SDN  |   SS  ||      ||   0   |   1   |   2   |   3   |  RPAR | EMPTY |
                 //                         |  LALT |  SHFT |  DFT  ||      ||  ENT  |  SYM  |  BKSC |
                 // ===================================================================================================================
                 num_media_layer {
