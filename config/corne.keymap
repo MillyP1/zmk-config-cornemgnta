@@ -43,25 +43,26 @@
                 compatible = "zmk,keymap";
 
                 // ===================================================================================================================
-                // Default Layer: Standard
+                // Default Layer
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |   Q   |   W   |   E   |   R   |   T   ||      ||   Y   |   U   |   I   |   O   |   ;   | EMPTY |
                 // | EMPTY |   A   |   S   |   D   |   F   |   G   ||      ||   H   |   J   |   K   |   L   |   P   | EMPTY |
                 // | EMPTY |   Z   |   X   |   C   |   V   |   B   ||      ||   N   |   M   |   ,   |   .   |   /   | EMPTY |
-                //                         |  CTRL |  TAB  |  SPC  ||      ||  SPC  |  BSPC |  SYM  |
-                // Default Layer: Homerow Mods and Tap-Dancing
+                //                         |  CTRL |  TAB  |  SPC  ||      ||  SPC  |  BSPC |  NUM  |
+                // -------------------------------------------------------------------------------------------------------------------
+                // Homerow Mods and Tap-Dancing
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |   '   | EMPTY |
-                // | EMPTY |       |       |  ALT  |  GUI  |       ||      ||       |  GUI  |  ALT  |       |       | EMPTY |
+                // | EMPTY |       |       |  ALT  |  GUI  |       ||      ||       |  GUI  |  ALT  |  LBRC |  RBRC | EMPTY |
                 // | EMPTY |       |       |       |       |       ||      ||       |       |   -   |   =   |   !   | EMPTY |
-                //                         |       |       |  SHFT ||      ||  RTN  |       |  CPLK |
+                //                         |       |       |  SHFT ||      ||  RTN  |  CAPS |       |
                 // ===================================================================================================================
                 default_layer {
                 bindings = <
                 &trans   &kp Q   &kp W   &kp E        &kp R          &kp T                  &kp Y           &kp U           &kp I             &kp O            &td SQT SEMI     &trans
-                &trans   &kp A   &kp S   &hm LALT D   &hm LGUI F     &kp G                  &kp H           &hm LGUI J      &hm LALT K        &hm LS(RBKT) L   &hm LS(RBKT) P   &trans
+                &trans   &kp A   &kp S   &hm LALT D   &hm LGUI F     &kp G                  &kp H           &hm LGUI J      &hm LALT K        &hm LS(LBKT) L   &hm LS(RBKT) P   &trans
                 &trans   &kp Z   &kp X   &kp C        &kp V          &kp B                  &kp N           &kp M           &td MINUS COMMA   &td EQUAL DOT    &td EXCL FSLH    &trans
-                                         &kp LCTRL    &kp TAB        &hm LSHFT SPACE        &td RET SPACE   &hm CAPS BSPC   &to SYMBOLS
+                                         &kp LCTRL    &kp TAB        &td LSHFT SPACE        &td RET SPACE   &td CAPS BSPC   &to NUM_MEDIA
                 >;
                 };
 
@@ -70,8 +71,15 @@
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |  ESC  |   @   |   #   |   $   |   %   ||      ||   ^   |   &   |   *   |   !   |   ;   | EMPTY |
                 // | EMPTY |  TAB  |  CTRL |       |   ~   |   '   ||      ||  LPAR |  RPAR |       |       |   \   | EMPTY |
-                // | EMPTY |  NAV  |  ALT  |       |   -   |   =   ||      ||  LBRC |  RBRC |   ,   |   .   |   /   | EMPTY |
-                //                         |  GUI  |  SHFT |  DFT  ||      ||  RTN  |  NUM  |  BKSC |
+                // | EMPTY |  NAV  |  ALT  |       |   -   |   =   ||      ||  LBKT |  RBKT |   ,   |   .   |   /   | EMPTY |
+                //                         |  GUI  |  SHFT |  DFT  ||      ||  SPC  |  BSPC |  NUM  |
+                // -------------------------------------------------------------------------------------------------------------------
+                // Homerow Mods and Tap-Dancing
+                // -------------------------------------------------------------------------------------------------------------------
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                //                         |       |       |       ||      ||  RTN  |       |       |
                 // ===================================================================================================================
                 symbols_layer {
                 bindings = <
@@ -86,16 +94,23 @@
                 // Numbers and Media Controls Layer
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |  ESC  |  PLY  |  RWD  |  FWD  |  GUI  ||      ||   -   |   7   |   8   |   9   |   +   | EMPTY |
-                // | EMPTY |  TAB  |       |  VUP  |  VDN  |       ||      ||   =   |   4   |   5   |   6   |  LPAR | EMPTY |
-                // | EMPTY |  NAV  |       |  SUP  |  SDN  |   SS  ||      ||   0   |   1   |   2   |   3   |  RPAR | EMPTY |
-                //                         |  LALT |  SHFT |  DFT  ||      ||  RTN  |  SYM  |  BKSC |
+                // | EMPTY |  TAB  |  CTRL |  VUP  |  VDN  |       ||      ||   =   |   4   |   5   |   6   |  LPAR | EMPTY |
+                // | EMPTY |  NAV  |  ALT  |  SBUP |  SBDN |       ||      ||   0   |   1   |   2   |   3   |  RPAR | EMPTY |
+                //                         |  LC_a |  SHFT |  DFT  ||      ||  SPC  |  BSPC |  SYM  |
+                // -------------------------------------------------------------------------------------------------------------------
+                // Homerow Mods and Tap-Dancing
+                // -------------------------------------------------------------------------------------------------------------------
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                //                         |       |       |       ||      ||  RTN  |       |       |
                 // ===================================================================================================================
                 num_media_layer {
                 bindings = <
-                &trans   &kp ESC        &kp C_PP    &kp C_PREV   &kp C_NEXT             &kp LGUI           &kp MINUS       &kp N7     &kp N8        &kp N9   &kp SEMI   &trans
-                &trans   &kp TAB        &kp LCTRL   &trans       &kp TILDE              &trans             &kp EQUAL       &kp N4     &kp N5        &kp N6   &kp LPAR   &trans
-                &trans   &to NAVIGATE   &kp LALT    &trans       &hm LC(LS(N4)) MINUS   &trans             &kp N0          &kp N1     &kp N2        &kp N3   &kp RPAR   &trans
-                                                    &kp LGUI     &kp LSHFT              &to DEFAULT        &td RET SPACE   &kp BSPC   &to SYMBOLS
+                &trans   &kp ESC        &kp C_PP    &kp C_PREV     &kp C_NEXT     &kp LGUI           &kp MINUS       &kp N7     &kp N8        &kp N9   &kp PLUS   &trans
+                &trans   &kp TAB        &kp LCTRL   &kp C_VOL_UP   &kp C_VOL_DN   &trans             &kp EQUAL       &kp N4     &kp N5        &kp N6   &kp LPAR   &trans
+                &trans   &to NAVIGATE   &kp LALT    &kp C_BRI_UP   &kp C_BRI_DN   &trans             &kp N0          &kp N1     &kp N2        &kp N3   &kp RPAR   &trans
+                                                    &sk LC(A)      &kp LSHFT      &to DEFAULT        &td RET SPACE   &kp BSPC   &to SYMBOLS
                 >;
                 };
 
@@ -106,6 +121,13 @@
                 // | EMPTY |  TAB  |  MLT  |  MDN  |  MRT  |  RTCK ||      ||  LTCK |   LT  |   DN  |   UP  |   RT  | EMPTY |
                 // | EMPTY |  GAM  |  MSUP |       |  MSDN |  DEL  ||      ||  GUI  |       |       |       |  BLU  | EMPTY |
                 //                         |  LALT |  SHFT |  DFT  ||      ||  ENT  |  SYM  |  BKSC |
+                // -------------------------------------------------------------------------------------------------------------------
+                // Homerow Mods and Tap-Dancing
+                // -------------------------------------------------------------------------------------------------------------------
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |   '   | EMPTY |
+                // | EMPTY |       |       |  ALT  |  GUI  |       ||      ||       |  GUI  |  ALT  |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |   -   |   =   |   !   | EMPTY |
+                //                         |       |       |  SHFT ||      ||  RTN  |       |  CPLK |
                 // ===================================================================================================================
                 navi_mouse_layer {
                 bindings = <
@@ -123,6 +145,13 @@
                 // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
                 // | EMPTY |  SYM  |       |       |       |  BL1  ||      ||  BL2  |       |       |       |  NUM  | EMPTY |
                 //                         |       |       |  DFT  ||      ||       |       |       |
+                // -------------------------------------------------------------------------------------------------------------------
+                // Homerow Mods and Tap-Dancing
+                // -------------------------------------------------------------------------------------------------------------------
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |   '   | EMPTY |
+                // | EMPTY |       |       |  ALT  |  GUI  |       ||      ||       |  GUI  |  ALT  |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |   -   |   =   |   !   | EMPTY |
+                //                         |       |       |  SHFT ||      ||  RTN  |       |  CPLK |
                 // ===================================================================================================================
                 blu_layer {
                 bindings = <
@@ -134,25 +163,26 @@
                 };
 
                 // ===================================================================================================================
-                // Game Layer: Standard
+                // Game Layer
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |   Q   |   W   |   E   |   R   |   T   ||      ||   Y   |   U   |   I   |   O   |   ;   | EMPTY |
                 // | EMPTY |   A   |   S   |   D   |   F   |   G   ||      ||   H   |   J   |   K   |   L   |   P   | EMPTY |
                 // | EMPTY |   Z   |   X   |   C   |   V   |   B   ||      ||   N   |   M   |   ,   |   .   |   /   | EMPTY |
-                //                         |  CTRL |  TAB  |  SPC  ||      ||  ENT  |  SYM  |  BKSC  |
-                // Game Layer: Homerow Mods and Tap-Dancing
+                //                         |  CTRL |  TAB  |  SPC  ||      ||  SPC  |  BSPC |  NUM  |
+                // -------------------------------------------------------------------------------------------------------------------
+                // Homerow Mods and Tap-Dancing
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |   '   | EMPTY |
-                // | EMPTY |       |       | LALT  |  GUI  |       ||      ||       |  GUI  |  RALT |       |       | EMPTY |
+                // | EMPTY |       |       |  ALT  |  GUI  |       ||      ||       |  GUI  |  ALT  |  LBRC |  RBRC | EMPTY |
                 // | EMPTY |       |       |       |       |       ||      ||       |       |   -   |   =   |   !   | EMPTY |
-                //                         |       |  SHFT |       ||      ||       |       |       |
+                //                         |       |       |  SHFT ||      ||  RTN  |  CAPS |       |
                 // ===================================================================================================================
                 game_layer {
                 bindings = <
-                &trans   &kp Q   &kp W   &kp E        &kp R          &kp T                  &kp Y           &kp U           &kp I             &kp O           &td SQT SEMI    &trans
-                &trans   &kp A   &kp S   &hm LALT D   &hm LGUI F     &kp G                  &kp H           &hm LGUI J      &hm LALT K        &kp L           &kp P           &trans
-                &trans   &kp Z   &kp X   &kp C        &kp V          &kp B                  &kp N           &kp M           &td MINUS COMMA   &td EQUAL DOT   &td EXCL FSLH   &trans
-                                         &kp LCTRL    &kp TAB        &hm LSHFT SPACE        &td RET SPACE   &hm BSPC CAPS   &to SYMBOLS
+                &trans   &kp Q   &kp W   &kp E        &kp R          &kp T                  &kp Y           &kp U           &kp I             &kp O            &td SQT SEMI     &trans
+                &trans   &kp A   &kp S   &hm LALT D   &hm LGUI F     &kp G                  &kp H           &hm LGUI J      &hm LALT K        &hm LS(LBKT) L   &hm LS(RBKT) P   &trans
+                &trans   &kp Z   &kp X   &kp C        &kp V          &kp B                  &kp N           &kp M           &td MINUS COMMA   &td EQUAL DOT    &td EXCL FSLH    &trans
+                                         &kp LCTRL    &kp TAB        &td LSHFT SPACE        &td RET SPACE   &td CAPS BSPC   &to NUM_MEDIA
                 >;
                 };
         };
