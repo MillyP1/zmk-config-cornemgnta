@@ -10,7 +10,7 @@
 
 #define DEFAULT    0
 #define NUM_MEDIA  1
-#define SMYBOLS    2
+#define SYMBOLS    2
 #define NAVIGATE   3
 #define BLUETOOTH  4
 #define GAME       5
@@ -67,30 +67,6 @@
                 };
 
                 // ===================================================================================================================
-                // Symbols Layer
-                // -------------------------------------------------------------------------------------------------------------------
-                // | EMPTY |  ESC  |   @   |   #   |   $   |   %   ||      ||   ^   |   &   |   *   |   !   |   ;   | EMPTY |
-                // | EMPTY |  TAB  |  CTRL |       |   ~   |   '   ||      ||  LPAR |  RPAR |       |       |   \   | EMPTY |
-                // | EMPTY |  NAV  |  ALT  |       |   -   |   =   ||      ||  LBKT |  RBKT |   ,   |   .   |   /   | EMPTY |
-                //                         |  GUI  |  SHFT |  DFT  ||      ||  SPC  |  BSPC |  NUM  |
-                // -------------------------------------------------------------------------------------------------------------------
-                // Homerow Mods and Tap-Dancing
-                // -------------------------------------------------------------------------------------------------------------------
-                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
-                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
-                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
-                //                         |       |       |       ||      ||  RTN  |       |       |
-                // ===================================================================================================================
-                symbols_layer {
-                bindings = <
-                &none   &kp ESC        &kp AT      &kp HASH   &kp DLLR    &kp PRCNT          &kp CARET       &kp AMPS   &kp STAR        &kp EXCL   &kp SEMI   &none
-                &none   &kp TAB        &kp LCTRL   &none      &kp TILDE   &kp SQT            &kp LPAR        &kp RPAR   &none           &none      &kp BSLH   &none
-                &none   &to NAVIGATE   &kp LALT    &none      &kp MINUS   &kp EQUAL          &kp LBKT        &kp RBKT   &kp COMMA       &kp DOT    &kp FSLH   &none
-                                                   &kp LGUI   &kp LSHFT   &to DEFAULT        &td RET SPACE   &kp BSPC   &to NUM_MEDIA
-                >;
-                };     
-
-                // ===================================================================================================================
                 // Numbers and Symbols Layer
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |  ESC  |   @   |   #   |   $   |   %   ||      ||   -   |   =   |   7   |   8   |   9   | EMPTY |
@@ -120,6 +96,30 @@
                 //                                    &sk LC(A)      &kp LSHFT      &to DEFAULT        &td RET SPACE   &kp BSPC   &to SYMBOLS
                 // >;
                 // };
+
+                // ===================================================================================================================
+                // Symbols Layer
+                // -------------------------------------------------------------------------------------------------------------------
+                // | EMPTY |  ESC  |   @   |   #   |   $   |   %   ||      ||   ^   |   &   |   *   |   !   |   ;   | EMPTY |
+                // | EMPTY |  TAB  |  CTRL |       |   ~   |   '   ||      ||  LPAR |  RPAR |       |       |   \   | EMPTY |
+                // | EMPTY |  NAV  |  ALT  |       |   -   |   =   ||      ||  LBKT |  RBKT |   ,   |   .   |   /   | EMPTY |
+                //                         |  GUI  |  SHFT |  DFT  ||      ||  SPC  |  BSPC |  NUM  |
+                // -------------------------------------------------------------------------------------------------------------------
+                // Homerow Mods and Tap-Dancing
+                // -------------------------------------------------------------------------------------------------------------------
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                //                         |       |       |       ||      ||  RTN  |       |       |
+                // ===================================================================================================================
+                symbols_layer {
+                bindings = <
+                &none   &kp ESC        &kp AT      &kp HASH   &kp DLLR    &kp PRCNT          &kp CARET       &kp AMPS   &kp STAR        &kp EXCL   &kp SEMI   &none
+                &none   &kp TAB        &kp LCTRL   &none      &kp TILDE   &kp SQT            &kp LPAR        &kp RPAR   &none           &none      &kp BSLH   &none
+                &none   &to NAVIGATE   &kp LALT    &none      &kp MINUS   &kp EQUAL          &kp LBKT        &kp RBKT   &kp COMMA       &kp DOT    &kp FSLH   &none
+                                                   &kp LGUI   &kp LSHFT   &to DEFAULT        &td RET SPACE   &kp BSPC   &to NUM_MEDIA
+                >;
+                };     
 
                 // ===================================================================================================================
                 // Navigation and Mouse Layer !! WORK IN PROGRESS  !!
