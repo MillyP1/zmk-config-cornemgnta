@@ -143,7 +143,7 @@
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |       |       |  BLP  |  BLN  |       ||      ||  BLC  |       |       |       |       | EMPTY |
                 // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
-                // | EMPTY |  SYM  |       |       |       |  BL1  ||      ||  BL2  |       |       |       |  NUM  | EMPTY |
+                // | EMPTY |  NUM  |       |       |       |  BL1  ||      ||  BL2  |       |       |       |  NUM  | EMPTY |
                 //                         |       |       |  DFT  ||      ||       |       |       |
                 // -------------------------------------------------------------------------------------------------------------------
                 // Homerow Mods and Tap-Dancing
@@ -157,7 +157,7 @@
                 bindings = <
                 &none   &none         &none   &bt BT_PRV   &bt BT_NXT   &none               &bt BT_CLR     &none   &none   &none   &none          &none
                 &none   &none         &none   &none        &none        &none               &none          &none   &none   &none   &none          &none
-                &none   &to SYMBOLS   &none   &none        &none        &bt BT_SEL 1        &bt BT_SEL 2   &none   &none   &none   &to NAVIGATE   &none
+                &none   &to NUM_SYM   &none   &none        &none        &bt BT_SEL 1        &bt BT_SEL 2   &none   &none   &none   &to NAVIGATE   &none
                                               &none        &none        &to DEFAULT         &none          &none   &none
                 >;
                 };
