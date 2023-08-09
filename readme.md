@@ -41,3 +41,15 @@
 	- Changed ` &kp MINUS ` to ` &td TILDE MINUS `
 - Added pipe ` | ` symbol to num_sym layer under ` \ ` key
 	- Changed ` &kp BSLH ` to ` &td PIPE BSLH `
+
+
+## Version 2.1
+- Slightly adjusted Navigation Layer
+- Merged LC(A) into GUI on Numbers Layer
+- Added TAB to previous LC(A) key on Numbers Layer
+- Added RET and TAB to Navigation Layer
+
+
+## Version 2.2
+- TMUX Layer implementation
+- Bluetooth, Media, and Game Layers have been made inaccessible until Version 3.0
