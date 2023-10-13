@@ -97,7 +97,7 @@
                 // | EMPTY |  ESC  |  MSLT |  MUP  |  MSRT |       ||      ||  BCK  |  PVTB |  NXTB |  FWRD |       | EMPTY |
                 // | EMPTY |  LTCK |  MLT  |  MDN  |  MRT  |  RTCK ||      ||   LT  |   DN  |   UP  |   RT  |       | EMPTY |
                 // | EMPTY |  GAME |  MSUP |       |  MSDN |       ||      ||       |       |       |       |  BLU  | EMPTY |
-                //                         |  TMUX |  TAB  |  DFT  ||      ||  RET  |       |  NUM  |
+                //                         |  TMUX |  TAB  |  DFT  ||      ||  RET  |  LC_a |  NUM  |
                 // -------------------------------------------------------------------------------------------------------------------
                 // Homerow Mods and Tap-Dancing
                 // -------------------------------------------------------------------------------------------------------------------
@@ -109,9 +109,9 @@
                 navi_mouse_layer {
                 bindings = <
                 &none   &kp ESC   &none   &none      &none     &none              &none      &none      &none         &none       &none           &none
-                &none   &none     &none   &none      &none     &none              &kp LEFT   &kp DOWN   &kp UP        &kp RIGHT   &none           &none
+                &none   &none     &none   &none      &none     &none              &kp LEFT   &kp DOWN   &kp UP        &kp RIGHT_ARROW   &none           &none
                 &none   &none     &none   &none      &none     &none              &none      &none      &none         &none       &none   &none
-                                          &to TMUX   &kp TAB   &to DEFAULT        &kp RET    &none      &to NUM_SYM
+                                          &to TMUX   &kp TAB   &to DEFAULT        &kp RET    &kp LC(A)      &to NUM_SYM
                 >;
                 };
 

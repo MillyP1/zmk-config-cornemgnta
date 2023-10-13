@@ -42,7 +42,6 @@
 	- Changed ` &kp MINUS ` to ` &td TILDE MINUS `
 - Added pipe ` | ` symbol to num_sym layer under ` \ ` key
 	- Changed ` &kp BSLH ` to ` &td PIPE BSLH `
-<<<<<<< HEAD
 
 
 ## Version 2.1
@@ -55,5 +54,13 @@
 ## Version 2.2
 - TMUX Layer implementation
 - Bluetooth, Media, and Game Layers have been made inaccessible until Version 3.0
-=======
->>>>>>> 9ec4a3f177f8277b3c289b672463951a39ccd3c8
+
+
+## Version 2.3
+**Key Changes**
+
+- Added TMUX Leader to Navigation layer
+
+**To Do**
+
+- Add LC(~)
