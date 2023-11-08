@@ -64,3 +64,9 @@
 **To Do**
 
 - Add LC(~)
+
+
+## Version 3.0
+**Key Changes**
+
+- Changed to US Layout to Colemak Mod-DH

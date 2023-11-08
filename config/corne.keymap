@@ -60,9 +60,9 @@
                 // ===================================================================================================================
                 default_layer {
                 bindings = <
-                &none   &kp Q   &kp W       &kp E        &kp R          &kp T            &kp Y           &kp U           &td PIPE I        &kp O            &td SQT SEMI     &none
-                &none   &kp A   &hm DEL S   &hm LALT D   &hm LGUI F     &kp G            &kp H           &hm LGUI J      &hm LALT K        &hm LS(LBKT) L   &hm LS(RBKT) P   &none
-                &none   &kp Z   &kp X       &kp C        &kp V          &kp B            &kp N           &kp M           &td MINUS COMMA   &td EQUAL DOT    &td EXCL FSLH    &none
+                &none   &kp Q   &kp W       &kp F        &kp P          &kp B            &kp J           &kp L           &td PIPE U        &kp Y            &td SQT SEMI     &none
+                &none   &kp A   &hm DEL R   &hm LALT S   &hm LGUI T     &kp G            &kp M           &hm LGUI N      &hm LALT E        &hm LS(LBKT) I   &hm LS(RBKT) O   &none
+                &none   &kp Z   &kp X       &kp C        &kp D          &kp V            &kp K           &kp H           &td MINUS COMMA   &td EQUAL DOT    &td EXCL FSLH    &none
                                             &kp LCTRL    &kp TAB        &kp LSHFT        &td RET SPACE   &td CAPS BSPC   &to NUM_SYM
                 >;
                 };
@@ -212,3 +212,12 @@
                 };
         };
 };
+
+// default_layer {
+//                 bindings = <
+//                 &none   &kp Q   &kp W       &kp F        &kp P          &kp B            &kp J           &kp L           &td PIPE U        &kp Y            &td SQT SEMI     &none
+//                 &none   &kp A   &hm DEL R   &hm LALT S   &hm LGUI T     &kp G            &kp M           &hm LGUI N      &hm LALT E        &hm LS(LBKT) I   &hm LS(RBKT) O   &none
+//                 &none   &kp Z   &kp X       &kp C        &kp D          &kp V            &kp K           &kp H           &td MINUS COMMA   &td EQUAL DOT    &td EXCL FSLH    &none
+//                                             &kp LCTRL    &kp TAB        &kp LSHFT        &td RET SPACE   &td CAPS BSPC   &to NUM_SYM
+//                 >;
+//                 };
