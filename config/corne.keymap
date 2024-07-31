@@ -44,11 +44,11 @@
                 compatible = "zmk,keymap";
 
                 // ===================================================================================================================
-                // Default Layer
+                // Default Layer [Colemak-DH]
                 // -------------------------------------------------------------------------------------------------------------------
-                // | EMPTY |   Q   |   W   |   E   |   R   |   T   ||      ||   Y   |   U   |   I   |   O   |   ;   | EMPTY |
-                // | EMPTY |   A   |   S   |   D   |   F   |   G   ||      ||   H   |   J   |   K   |   L   |   P   | EMPTY |
-                // | EMPTY |   Z   |   X   |   C   |   V   |   B   ||      ||   N   |   M   |   ,   |   .   |   /   | EMPTY |
+                // | EMPTY |   Q   |   W   |   F   |   P   |   B   ||      ||   J   |   L   |   U   |   Y   |   ;   | EMPTY |
+                // | EMPTY |   A   |   R   |   S   |   T   |   G   ||      ||   M   |   N   |   E   |   I   |   O   | EMPTY |
+                // | EMPTY |   Z   |   X   |   C   |   D   |   V   ||      ||   K   |   H   |   ,   |   .   |   /   | EMPTY |
                 //                         |  CTRL |  TAB  |  SHFT ||      ||  SPC  |  BSPC |  NUM  |
                 // -------------------------------------------------------------------------------------------------------------------
                 // Homerow Mods and Tap-Dancing
@@ -197,17 +197,17 @@
                 // -------------------------------------------------------------------------------------------------------------------
                 // Homerow Mods and Tap-Dancing
                 // -------------------------------------------------------------------------------------------------------------------
-                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |   '   | EMPTY |
-                // | EMPTY |       |       |  ALT  |  GUI  |       ||      ||       |  GUI  |  ALT  |  LBRC |  RBRC | EMPTY |
-                // | EMPTY |       |       |       |       |       ||      ||       |       |   -   |   =   |   !   | EMPTY |
-                //                         |       |       |  SHFT ||      ||  RTN  |  CAPS |       |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
+                //                         |       |       |       ||      ||       |       |       |
                 // ===================================================================================================================
                 game_layer {
                 bindings = <
-                &none   &kp Q   &kp W   &kp E        &kp R          &kp T                  &kp Y           &kp U           &kp I             &kp O            &td SQT SEMI     &none
-                &none   &kp A   &kp S   &hm LALT D   &hm LGUI F     &kp G                  &kp H           &hm LGUI J      &hm LALT K        &hm LS(LBKT) L   &hm LS(RBKT) P   &none
-                &none   &kp Z   &kp X   &kp C        &kp V          &kp B                  &kp N           &kp M           &td MINUS COMMA   &td EQUAL DOT    &td EXCL FSLH    &none
-                                        &kp LCTRL    &kp TAB        &td LSHFT SPACE        &td RET SPACE   &td CAPS BSPC   &to NUM_SYM
+                &none   &kp Q   &kp W   &kp E       &kp R      &kp T            &kp Y       &kp U      &kp I         &kp O     &kp SEMI   &none
+                &none   &kp A   &kp S   &kp D       &kp F      &kp G            &kp H       &kp J      &kp K         &kp L     &kp P      &none
+                &none   &kp Z   &kp X   &kp C       &kp V      &kp B            &kp N       &kp M      &kp COMMA     &kp DOT   &kp FSLH   &none
+                                        &kp LCTRL   &kp LALT   &kp LSHFT        &kp SPACE   &kp BSPC   &to DEFAULT
                 >;
                 };
         };
