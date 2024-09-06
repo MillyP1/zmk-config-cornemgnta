@@ -30,12 +30,10 @@
 
 
                 td: tapdance {
-                        compatible = "zmk,behavior-hold-tap";
+                        compatible = "zmk,behavior-tap-dance";
                         label = "TAPDANCE";
-                        #binding-cells = <2>;
+                        #binding-cells = <0>;
                         tapping-term-ms = <250>;
-                        quick_tap_ms = <0>;
-                        flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
         };
@@ -61,9 +59,9 @@
                 default_layer {
                 bindings = <
                 &none   &kp Q   &kp W       &kp F        &kp P          &kp B            &kp J           &kp L           &td PIPE U        &kp Y            &td SQT SEMI     &none
-                &none   &kp A   &hm DEL R   &hm LALT S   &hm LGUI T     &kp G            &kp M           &hm LGUI N      &hm LALT E        &hm LS(LBKT) I   &hm LS(RBKT) O   &none
+                &none   &kp A   &hm DEL R   &hm LALT S   &hm LGUI T     &td ESC G        &kp M           &hm LGUI N      &hm LALT E        &hm LS(LBKT) I   &hm LS(RBKT) O   &none
                 &none   &kp Z   &kp X       &kp C        &kp D          &kp V            &kp K           &kp H           &td MINUS COMMA   &td EQUAL DOT    &td EXCL FSLH    &none
-                                            &kp LCTRL    &kp TAB        &kp LSHFT        &td RET SPACE   &td CAPS BSPC   &to NUM_SYM
+                                            &kp LCTRL    &kp TAB        &kp LSHFT        &td RET SPACE   &td CAPS BSPC   &lt NUM_SYM BSPC
                 >;
                 };
 
@@ -108,10 +106,10 @@
                 // ===================================================================================================================
                 navi_mouse_layer {
                 bindings = <
-                &none   &kp ESC   &none   &none      &none     &none              &none      &none      &none         &none       &none           &none
-                &none   &none     &none   &none      &none     &none              &kp LEFT   &kp DOWN   &kp UP        &kp RIGHT_ARROW   &none           &none
-                &none   &none     &none   &none      &none     &none              &none      &none      &none         &none       &none   &none
-                                          &to GAME   &kp TAB   &to DEFAULT        &kp RET    &kp LC(A)      &to NUM_SYM
+                &none   &kp ESC   &none   &none      &none     &none              &none       &none       &none         &none             &none   &none
+                &none   &none     &none   &none      &none     &none              &kp LEFT    &kp DOWN    &kp UP        &kp RIGHT_ARROW   &none   &none
+                &none   &none     &none   &none      &none     &none              &kp LSHFT   &none       &none         &none             &none   &none
+                                          &to GAME   &kp TAB   &to DEFAULT        &kp RET     &kp LC(A)   &to NUM_SYM
                 >;
                 };
 
