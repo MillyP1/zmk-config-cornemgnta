@@ -33,9 +33,11 @@
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAPDANCE";
                         #binding-cells = <0>;
-                        tapping-term-ms = <250>;
-                        bindings = <&kp CAPS> , <&kp BSPC>;
+                        tapping-term-ms = <100>;
+                        bindings = <&kp BSPC> , <&kp CAPS>;
                 };
+
+                
         };
 
         keymap {
