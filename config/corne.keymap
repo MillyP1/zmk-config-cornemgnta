@@ -29,12 +29,12 @@
                 };
 
 
-                td: tapdance {
+                td_shft_cplk: tapdance {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAPDANCE";
                         #binding-cells = <0>;
                         tapping-term-ms = <100>;
-                        bindings = <&kp BSPC> , <&kp CAPS>;
+                        bindings = <&kp LSHFT> , <&kp CAPS>;
                 };
 
                 
@@ -51,19 +51,19 @@
                 // | EMPTY |   Z   |   X   |   C   |   D   |   V   ||      ||   K   |   H   |   ,   |   .   |   /   | EMPTY |
                 //                         |  CTRL |  TAB  |  SHFT ||      ||  SPC  |  BSPC |  NUM  |
                 // -------------------------------------------------------------------------------------------------------------------
-                // Homerow Mods and Tap-Dancing
+                // Homerow Mods, Mod-Tap and Tap-Dance
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |       |       |       |       |       ||      ||       |       |   |   |       |   '   | EMPTY |
-                // | EMPTY |       |  DEL  |  ALT  |  GUI  |       ||      ||       |  GUI  |  ALT  |  LBRC |  RBRC | EMPTY |
+                // | EMPTY |       |  DEL  |  ALT  |  GUI  |  ESC  ||      ||       |  GUI  |  ALT  |  LBRC |  RBRC | EMPTY |
                 // | EMPTY |       |       |       |       |       ||      ||       |       |   -   |   =   |   !   | EMPTY |
-                //                         |       |       |       ||      ||  RTN  |  CAPS |       |
+                //                         |       |       |       ||      ||  RTN  |       |       |
                 // ===================================================================================================================
                 default_layer {
                 bindings = <
-                &none   &kp Q   &kp W       &kp F        &kp P          &kp B            &kp J           &kp L           &hm PIPE U        &kp Y            &hm SQT SEMI     &none
-                &none   &kp A   &hm DEL R   &hm LALT S   &hm LGUI T     &hm ESC G        &kp M           &hm LGUI N      &hm LALT E        &hm LS(LBKT) I   &hm LS(RBKT) O   &none
-                &none   &kp Z   &kp X       &kp C        &kp D          &kp V            &kp K           &kp H           &hm MINUS COMMA   &hm EQUAL DOT    &hm EXCL FSLH    &none
-                                            &kp LCTRL    &kp TAB        &kp LSHFT        &hm RET SPACE   &td   &lt NUM_SYM BSPC
+                &none   &kp Q   &kp W       &kp F        &kp P          &kp B                   &kp J           &kp L           &mt PIPE U        &kp Y            &mt SQT SEMI     &none
+                &none   &kp A   &hm DEL R   &hm LALT S   &hm LGUI T     &hm ESC G               &kp M           &hm LGUI N      &hm LALT E        &mt LS(LBKT) I   &mt LS(RBKT) O   &none
+                &none   &kp Z   &kp X       &kp C        &kp D          &kp V                   &kp K           &kp H           &mt MINUS COMMA   &mt EQUAL DOT    &mt EXCL FSLH    &none
+                                            &kp LCTRL    &kp TAB        &kp td_shft_cplk        &mt RET SPACE   &kp BSPC             &lt NUM_SYM BSPC
                 >;
                 };
 
