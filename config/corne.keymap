@@ -29,9 +29,9 @@
                 };
 
 
-                td_shft_cplk: tapdance {
+                td_shft_cplk: tapdance_shift_capslock {
                         compatible = "zmk,behavior-tap-dance";
-                        label = "TAPDANCE";
+                        label = "TAPDANCE_SHIFT_CAPSLOCK";
                         #binding-cells = <0>;
                         tapping-term-ms = <100>;
                         bindings = <&kp LSHFT> , <&kp CAPS>;
@@ -53,17 +53,17 @@
                 // -------------------------------------------------------------------------------------------------------------------
                 // Homerow Mods, Mod-Tap and Tap-Dance
                 // -------------------------------------------------------------------------------------------------------------------
-                // | EMPTY |       |       |       |       |       ||      ||       |       |   |   |       |   '   | EMPTY |
-                // | EMPTY |       |  DEL  |  ALT  |  GUI  |  ESC  ||      ||       |  GUI  |  ALT  |  LBRC |  RBRC | EMPTY |
-                // | EMPTY |       |       |       |       |       ||      ||       |       |   -   |   =   |   !   | EMPTY |
-                //                         |       |       |       ||      ||  RTN  |       |       |
+                // | EMPTY |   !   |   @   |   #   |   $   |   %   ||      ||   ^   |   &   |   *   |   (   |   )   | EMPTY |
+                // | EMPTY |       |  DEL  |  ALT  |  GUI  |  ESC  ||      ||       |  GUI  |  ALT  |       |   '   | EMPTY |
+                // | EMPTY |       |       |       |       |       ||      ||   [   |   ]   |   -   |   =   |   \   | EMPTY |
+                //                         |       |       |  CAPS ||      ||  RTN  |       |       |
                 // ===================================================================================================================
                 default_layer {
                 bindings = <
-                &none   &kp Q   &kp W       &kp F        &kp P          &kp B                   &kp J           &kp L           &mt PIPE U        &kp Y            &mt SQT SEMI     &none
-                &none   &kp A   &hm DEL R   &hm LALT S   &hm LGUI T     &hm ESC G               &kp M           &hm LGUI N      &hm LALT E        &mt LS(LBKT) I   &mt LS(RBKT) O   &none
-                &none   &kp Z   &kp X       &kp C        &kp D          &kp V                   &kp K           &kp H           &mt MINUS COMMA   &mt EQUAL DOT    &mt EXCL FSLH    &none
-                                            &kp LCTRL    &kp TAB        &kp td_shft_cplk        &mt RET SPACE   &kp BSPC             &lt NUM_SYM BSPC
+                &none   &mt EXCL Q   &mt AT W    &mt HASH F   &mt DLLR P     &mt PRCNT B          &mt CARET J     &mt AMPS L      &mt STAR U        &mt LPAR Y       &mt RPAR SEMI    &none
+                &none   &kp A        &hm DEL R   &hm LALT S   &hm LGUI T     &hm ESC G            &kp M           &hm LGUI N      &hm LALT E        &kp I            &mt SQT O        &none
+                &none   &kp Z        &kp X       &kp C        &kp D          &kp V                &mt LBKT K      &mt RBKT H      &mt MINUS COMMA   &mt EQUAL DOT    &mt BSLH FSLH    &none
+                                                 &kp LCTRL    &kp TAB        &td_shft_cplk        &mt RET SPACE   &kp BSPC        &mo NUM_SYM
                 >;
                 };
 
