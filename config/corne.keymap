@@ -92,7 +92,7 @@
                 &none   &kp ESC     &none       &kp N7        &kp N8       &kp N9              &kp MINUS   &kp PLUS       &none            &kp LPAR   &kp RPAR   &none
                 &none   &kp TAB     &none       &hm LALT N4   &hm GUI N5   &kp N6              &kp FSLH    &hm GUI STAR   &hm LALT TILDE   &none      &none      &none
                 &none   &sk LSHFT   &sk LC(A)   &kp N1        &kp N2       &kp N3              &kp EQUAL   &kp PRCNT      &none            &none      &none      &none
-                                                &sk LCTRL     &kp N0       &mo NAVIGATE        &kp SPACE   &td_bspc_del   &none
+                                                &sk LCTRL     &kp N0       &mo NAVIGATE        &kp SPACE   &mt DEL BSPC   &none
                 >;
                 };
 
@@ -164,10 +164,10 @@
                 game_layer {
                 display-name = "Gaming";
                 bindings = <
-                &none   &kp Q       &kp W   &kp E   &kp R       &kp T            &kp Y     &kp U      &kp I         &kp O     &hm LALT SEMI   &none
-                &none   &kp A       &kp S   &kp D   &kp F       &kp G            &kp H     &kp J      &kp K         &kp L     &kp P      &none
-                &none   &kp LSHFT   &kp X   &kp C   &kp V       &kp B            &kp N     &kp M      &kp COMMA     &kp DOT   &hm ESC FSLH   &none
-                                            &kp Z   &kp LCTRL   &kp SPACE        &kp TAB   &hm RET BSPC   &to DEFAULT
+                &none   &kp Q       &kp W   &kp E   &kp R       &kp T            &kp Y     &kp U          &kp I         &kp O     &hm LALT SEMI   &none
+                &none   &kp A       &kp S   &kp D   &kp F       &kp G            &kp H     &kp J          &kp K         &kp L     &kp P           &none
+                &none   &kp LSHFT   &kp X   &kp C   &kp V       &kp B            &kp N     &kp M          &kp COMMA     &kp DOT   &hm ESC FSLH    &none
+                                            &kp Z   &kp LCTRL   &kp SPACE        &kp TAB   &mt RET BSPC   &to DEFAULT
                 >;
                 };
 
