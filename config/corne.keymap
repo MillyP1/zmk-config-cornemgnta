@@ -37,7 +37,7 @@
                         label = "TAPDANCE_SHIFT_CAPSLOCK";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&kp LSHFT> , <&kp CAPS>;
+                        bindings = <&sk LSHFT> , <&kp CAPS>;
                 };
 
                 td_bspc_del: tapdance_bkspc_del {
