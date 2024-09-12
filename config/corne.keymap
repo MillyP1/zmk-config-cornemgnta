@@ -16,10 +16,6 @@
 #define GAME       4
 #define BLUETOOTH  5
 
-&mmv {
-   time-to-max-speed-ms = <680>;
-   acceleration-exponent=<2>;
-};
 
 / {
         behaviors {
@@ -121,7 +117,7 @@
                 // ===================================================================================================================
                 navi_mouse_layer {
                 bindings = <
-                &none   &none   &none   &mmv MOVE_UP      &none   &none        &none      &none      &none         &none       &none   &none
+                &none   &none   &none   &none      &none   &none        &none      &none      &none         &none       &none   &none
                 &none   &none   &none   &none      &none   &none        &kp LEFT   &kp DOWN   &kp UP        &kp RIGHT   &none   &none
                 &none   &none   &none   &none      &none   &none        &none      &none      &none         &none       &none   &none
                                         &to GAME   &none   &none        &none      &none      &none
