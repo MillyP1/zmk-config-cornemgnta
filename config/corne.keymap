@@ -15,6 +15,9 @@
 #define GAME       4
 #define BLUETOOTH  5
 
+&mt {
+    tapping-term-ms = <300>;
+};
 
 / {
         behaviors {
@@ -33,15 +36,15 @@
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAPDANCE_SHIFT_CAPSLOCK";
                         #binding-cells = <0>;
-                        tapping-term-ms = <100>;
-                        bindings = <&sk LSHFT> , <&kp CAPS>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp LSHFT> , <&kp CAPS>;
                 };
 
                 td_bspc_del: tapdance_bkspc_del {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAPDANCE_BKSPC_DEL";
                         #binding-cells = <0>;
-                        tapping-term-ms = <100>;
+                        tapping-term-ms = <200>;
                         bindings = <&kp BSPC> , <&kp DEL>;
                 };
 
@@ -71,7 +74,7 @@
                 &none   &mt EXCL Q   &mt AT W    &mt HASH F   &mt DLLR P             &mt PRCNT B          &mt CARET J   &mt AMPS L     &mt STAR U        &mt LPAR Y      &mt RPAR SEMI   &none
                 &none   &kp A        &hm ESC R   &hm LALT S   &hm LGUI T             &kp G                &kp M         &hm LGUI N     &hm LALT E        &kp I           &mt SQT O       &none
                 &none   &kp Z        &kp X       &kp C        &kp D                  &kp V                &mt LBKT K    &mt RBKT H     &mt MINUS COMMA   &mt EQUAL DOT   &mt BSLH FSLH   &none
-                                                 &sk LCTRL    &mt LC(LS(LALT)) TAB   &td_shft_cplk        &kp SPACE     &td_bspc_del   &lt NUM_MATH RET
+                                                 &kp LCTRL    &mt LC(LS(LALT)) TAB   &td_shft_cplk        &kp SPACE     &td_bspc_del   &lt NUM_MATH RET
                 >;
                 };
 
@@ -94,8 +97,8 @@
                 bindings = <
                 &none   &kp ESC     &none       &kp N7        &kp N8       &kp N9              &kp MINUS   &kp PLUS       &none            &kp LPAR   &kp RPAR   &none
                 &none   &kp TAB     &none       &hm LALT N4   &hm GUI N5   &kp N6              &kp FSLH    &hm GUI STAR   &hm LALT TILDE   &none      &none      &none
-                &none   &sk LSHFT   &sk LC(A)   &kp N1        &kp N2       &kp N3              &kp EQUAL   &kp PRCNT      &none            &none      &none      &none
-                                                &sk LCTRL     &kp N0       &mo NAVIGATE        &kp SPACE   &td_bspc_del   &lt DEFAULT RET
+                &none   &kp LSHFT   &kp LC(A)   &kp N1        &kp N2       &kp N3              &kp EQUAL   &kp PRCNT      &none            &none      &none      &none
+                                                &kp LCTRL     &kp N0       &mo NAVIGATE        &kp SPACE   &td_bspc_del   &lt DEFAULT RET
                 >;
                 };
 
