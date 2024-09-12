@@ -45,7 +45,7 @@
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAPDANCE_BKSPC_DEL";
                         #binding-cells = <0>;
-                        tapping-term-ms = <100>;
+                        tapping-term-ms = <150>;
                         bindings = <&kp BSPC> , <&kp DEL>;
                 };
 
@@ -71,6 +71,7 @@
                 //                         |       |  MEH  |  CAPS ||      ||       |  DEL  |  NUM  |
                 // ===================================================================================================================
                 default_layer {
+                        display-name = "Base";
                 bindings = <
                 &none   &mt EXCL Q   &mt AT W    &mt HASH F   &mt DLLR P             &mt PRCNT B          &mt CARET J   &mt AMPS L     &mt STAR U        &mt LPAR Y      &mt RPAR SEMI   &none
                 &none   &kp A        &hm ESC R   &hm LALT S   &hm LGUI T             &kp G                &kp M         &hm LGUI N     &hm LALT E        &kp I           &mt SQT O       &none
@@ -85,16 +86,17 @@
                 // | EMPTY |  ESC  |       |   7   |   8   |   9   ||      ||   -   |   +   |       |  LPAR |  RPAR | EMPTY |
                 // | EMPTY |  TAB  |       |   4   |   5   |   6   ||      ||   /   |   *   |   ~   |       |       | EMPTY |
                 // | EMPTY |  SHFT |  LC_a |   1   |   2   |   3   ||      ||   =   |   %   |       |       |       | EMPTY |
-                //                         |  CTRL |   0   |  NAVI ||      ||  SPC  |  BSPC |  RET  |
+                //                         |  CTRL |   0   |  NAVI ||      ||  SPC  |  BSPC |  DNC  |
                 // -------------------------------------------------------------------------------------------------------------------
                 // Homerow Mods and Tap-Dancing
                 // -------------------------------------------------------------------------------------------------------------------
                 // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
                 // | EMPTY |       |       |  ALT  |  GUI  |       ||      ||       |  GUI  |  ALT  |       |       | EMPTY |
                 // | EMPTY |       |       |       |       |       ||      ||       |       |       |       |       | EMPTY |
-                //                         |       |       |       ||      ||       |  DEL  |  DFT  |
+                //                         |       |       |       ||      ||       |  DEL  |  DNC  |
                 // ===================================================================================================================
                 num_math_layer {
+                        display-name = "Numbers";
                 bindings = <
                 &none   &kp ESC     &none       &kp N7        &kp N8       &kp N9              &kp MINUS   &kp PLUS       &none            &kp LPAR   &kp RPAR   &none
                 &none   &kp TAB     &none       &hm LALT N4   &hm GUI N5   &kp N6              &kp FSLH    &hm GUI STAR   &hm LALT TILDE   &none      &none      &none
@@ -119,6 +121,7 @@
                 //                         |       |       |  DNC  ||      ||       |       |       |
                 // ===================================================================================================================
                 navi_mouse_layer {
+                        display-name = "Navigation";
                 bindings = <
                 &none   &none   &none   &none      &none   &none        &none      &none      &none         &none       &none   &none
                 &none   &none   &none   &none      &none   &none        &kp LEFT   &kp DOWN   &kp UP        &kp RIGHT   &none   &none
@@ -143,6 +146,7 @@
                 //                         |       |       |       ||      ||       |       |       |
                 // ===================================================================================================================
                 media_layer {
+                        display-name = "Media";
                 bindings = <
                 &none   &none          &kp C_PP   &kp C_PREV     &kp C_NEXT     &none              &none   &none   &none          &none   &none   &none
                 &none   &none          &none      &kp C_VOL_UP   &kp C_VOL_DN   &none              &none   &none   &none          &none   &none   &none
@@ -167,6 +171,7 @@
                 //                         |       |       |       ||      ||       |       |       |
                 // ===================================================================================================================
                 game_layer {
+                        display-name = "Gaming";
                 bindings = <
                 &none   &kp Q       &kp W   &kp E   &kp R       &kp T            &kp Y     &kp U      &kp I         &kp O     &hm LALT SEMI   &none
                 &none   &kp A       &kp S   &kp D   &kp F       &kp G            &kp H     &kp J      &kp K         &kp L     &kp P      &none
