@@ -16,7 +16,6 @@
 #define BLUETOOTH  5
 
 &mt {
-    tapping-term-ms = <300>;
     flavor = "tap-preferred";
 };
 
@@ -73,10 +72,10 @@
                 default_layer {
                         display-name = "Base";
                 bindings = <
-                &none   &mt EXCL Q   &mt AT W    &mt HASH F   &mt DLLR P             &mt PRCNT B          &mt CARET J   &mt AMPS L     &mt STAR U        &mt LPAR Y      &mt RPAR SEMI   &none
-                &none   &kp A        &hm ESC R   &hm LALT S   &hm LGUI T             &kp G                &kp M         &hm LGUI N     &hm LALT E        &kp I           &mt SQT O       &none
-                &none   &kp Z        &kp X       &kp C        &kp D                  &kp V                &mt LBKT K    &mt RBKT H     &mt MINUS COMMA   &mt EQUAL DOT   &mt BSLH FSLH   &none
-                                                 &sk LCTRL    &mt LC(LS(LALT)) TAB   &td_shft_cplk        &kp SPACE     &td_bspc_del   &lt NUM_MATH RET
+                &none   &mt EXCL Q   &mt AT W    &mt HASH F   &mt DLLR P             &mt PRCNT B          &mt CARET J   &mt AMPS L      &mt STAR U        &mt LPAR Y      &mt RPAR SEMI   &none
+                &none   &kp A        &hm ESC R   &hm LALT S   &hm LGUI T             &kp G                &kp M         &hm LGUI N      &hm LALT E        &kp I           &mt SQT O       &none
+                &none   &kp Z        &kp X       &kp C        &kp D                  &kp V                &mt LBKT K    &mt RBKT H      &mt MINUS COMMA   &mt EQUAL DOT   &mt BSLH FSLH   &none
+                                                 &sk LCTRL    &mt LC(LS(LALT)) TAB   &td_shft_cplk        &kp SPACE     &mt CAPS BSPC   &lt NUM_MATH RET
                 >;
                 };
 
