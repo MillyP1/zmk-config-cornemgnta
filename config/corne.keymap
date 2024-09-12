@@ -92,9 +92,9 @@
                 // ===================================================================================================================
                 num_math_layer {
                 bindings = <
-                &none   &kp ESC     &none       &kp N7        &kp N8       &kp N9              &kp MINUS   &kp PLUS       &none           &kp LPAR   &kp RPAR   &none
-                &none   &none     &none       &none   &none   &none              &none    &none   &none   &none      &none      &none
-                &none   &sk LSHFT   &sk LC(A)   &kp N1        &kp N2       &kp N3              &kp EQUAL   &kp PRCNT      &none           &none      &none      &none
+                &none   &kp ESC     &none       &kp N7        &kp N8       &kp N9              &kp MINUS   &kp PLUS       &none            &kp LPAR   &kp RPAR   &none
+                &none   &kp TAB     &none       &hm LALT N4   &hm GUI N5   &kp N6              &kp FSLH    &hm GUI STAR   &hm LALT TILDE   &none      &none      &none
+                &none   &sk LSHFT   &sk LC(A)   &kp N1        &kp N2       &kp N3              &kp EQUAL   &kp PRCNT      &none            &none      &none      &none
                                                 &sk LCTRL     &kp N0       &mo NAVIGATE        &kp SPACE   &td_bspc_del   &lt DEFAULT RET
                 >;
                 };
