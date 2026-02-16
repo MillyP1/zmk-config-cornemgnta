@@ -114,10 +114,10 @@
                 navi_mouse_layer {
                 display-name = "Navigator";
                 bindings = <
-                &none   &to BLUETOOTH   &none   &none      &none   &none        &none      &none      &none    &none       &none   &none
-                &none   &none           &none   &none      &none   &none        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none   &none
-                &none   &sk LSHFT       &none   &none      &none   &none        &none      &none      &none    &none       &none   &none
-                                                &to GAME   &none   &none        &none      &none      &none
+                &none   &to BLUETOOTH   &none   &none      &none   &none              &none      &none      &none    &none       &none   &none
+                &none   &none           &none   &none      &none   &none              &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none   &none
+                &none   &sk LSHFT       &none   &none      &none   &none              &none      &none      &none    &none       &none   &none
+                                                &to GAME   &none   &to DEFAULT        &none      &none      &none
                 >;
                 };
 
